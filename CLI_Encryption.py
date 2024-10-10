@@ -1,7 +1,5 @@
 import argparse
 
-KEY = 'SEABASS'
-
 parser = argparse.ArgumentParser(description="A simple interactive CLI")
 args = parser.parse_args()
 
