@@ -1,9 +1,13 @@
 import argparse
+import os
+
+KEY = os.getenv('SECRET_KEY')
 
 parser = argparse.ArgumentParser(description="A simple interactive CLI")
 args = parser.parse_args()
 
 def char_to_index(char):
+    char = char.upper()
     if char.isalpha():
         return ord(char.lower()) - ord('a')
     else:
